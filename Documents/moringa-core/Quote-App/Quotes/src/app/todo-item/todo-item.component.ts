@@ -17,13 +17,14 @@ export class TodoItemComponent implements OnInit {
 setClasses() {
   let classes= {
     todo: true,
-    'is-complete': this.todo.completed
+    'is-complete': this.todo
   }
   return classes;
 }
 onToggle(todo) {
  todo.completed=!todo.completed; 
 }
+
 onDelete(todo) {
   
 }
