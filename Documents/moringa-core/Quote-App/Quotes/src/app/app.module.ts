@@ -1,25 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {HttpClientModule} from '@angular/common/http';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TodosComponent } from './todos/todos.component';
-import { TodoItemComponent } from './todo-item/todo-item.component';
+import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
+import { QuoteFormComponent } from './quote-form/quote-form.component';
+
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodosComponent,
-    TodoItemComponent,
+    QuoteDetailComponent,
+    QuoteFormComponent,
    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
