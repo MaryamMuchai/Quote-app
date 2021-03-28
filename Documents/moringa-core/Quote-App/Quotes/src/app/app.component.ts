@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 
 @Component({
@@ -6,13 +6,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  goals:string[];
 
-  constructor(){
-    this.goals = ['Write name', 'Write Quotes']
+  export class AppComponent {
   }
-}
-
-
-
+     
