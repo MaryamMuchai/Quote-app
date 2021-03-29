@@ -28,4 +28,9 @@ body {
   font-style: italic;
   font-family:'Franklin Gothic Medium',
   }
- 
+ .form-group {
+   background-color:green;
+   font-style: italic;
+   text-align: center;
+   color:wheat;
+ }
