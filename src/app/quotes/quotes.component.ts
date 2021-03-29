@@ -18,10 +18,11 @@ export class QuotesComponent implements OnInit {
       return <any>new Date(b.datePosted) - <any>new Date(a.datePosted);
     });
   }
-  addedQuote(QuotesComponent: any){
+  addedQuote(quote: Quote){
     let arraysize = this.quotes.length;
-    Quote.id = arraysize+1;
+    quote.id = arraysize+1;
     Quote.completeDate = new Date(Quote.completeDate)
+    this.quotes.push(quote)
 
   }
   quoteDelete(isRead: any, index: number){
