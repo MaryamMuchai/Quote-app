@@ -38,4 +38,13 @@ body {
    color: white;
    text-align: center;
    font-style: italic;
+   font-weight: bolder;
+ }
+ .btn-success {
+   background-color: green;
+color:white;
+font-size: larger;
+font-weight: 200;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
  }
