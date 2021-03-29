@@ -1,7 +1,6 @@
 export class Quote {
-    datePosted!: string | number | Date ;
     showInfo: boolean = false;
-  static completeDate: string | number | Date;
+  static completeDate:Date;
   static id: number;
 
     constructor(
@@ -10,9 +9,7 @@ export class Quote {
          public author:string,
          public dateposted:Date,
          public upvote: number,
-         public downvote: number,
-
-         ){
-
+         public downvote: number,){
+        
     }
 }
