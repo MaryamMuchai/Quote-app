@@ -1,1 +1,6 @@
-<p>quote-detail works!</p>
+<h5 class="quots.author"> - {{quots.author}} <span id="when">Posted: {{quots.datePosted|dateCount}} days ago</span> </h5>
+<div class="container-fluid" id="button">
+  <button class="btn btn-sm btn-success" (click)='upvote()'>{{quots.upvote}} <i class="upvote-white" id="upvote"></i></button> 
+  <button class="btn btn-sm hate" id="hate" (click)='downvote()'>{{quots.downvote}} <i class="downvote-black" id="downvote"></i></button> 
+  <button class="btn btn-sm btn-danger" id="del" (click)='deleteQuote(true)'><i class="delete-red" id="delete"></i></button> 
+</div>

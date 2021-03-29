@@ -1,1 +1,41 @@
-<p>quote-form works!</p>
+<div class="container-fluid">
+    <h2>Add Quote</h2>
+    <form (ngSubmit)='addQuote() ;quotesForm.resetForm({})' #quotesForm='ngForm'>
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" required class="form-control" id="name" 
+          [(ngModel)]="quoted.name" name="name" #name='ngModel'>
+          <!--incase name is not inputted-->
+          <div *ngIf="name.invalid && name.dirty" class="alert-danger">
+            <div *ngIf="name.errors.required">
+                Name Required.
+            </div>
+            
+          </div> 
+        </div>
+       <!--quote-->
+        <div class="form-group">
+          <label for="description">Quote</label>
+          <textarea class="form-control" id="quote" rows="2" required [(ngModel)]="quoted.quote" name="quote" #quote='ngModel'></textarea>
+         <!--incase quote is not included-->
+          <div *ngIf="quote.invalid && quote.dirty" class="alert-danger">
+            <div *ngIf="quote.errors.required">
+                Quote Required.
+            </div>
+          </div>
+        </div>
+        <!--author-->
+        <div class="form-group">
+          <label for="name">Quote Author</label>
+          <input type="text" required class="form-control" id="author"[(ngModel)]="quoted.author" name="author" #author='ngModel'>
+         <!----->
+          <div *ngIf="title.invalid && title.dirty" class="alert alert-danger">
+            <div *ngIf="title.errors.required">
+                Author Name required.
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-sm btn-success">Add Quote</button>
+    </form>
+  </div>
+
