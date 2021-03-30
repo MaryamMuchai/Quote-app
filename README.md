@@ -11,8 +11,7 @@ Maryam Muchai
 * [AngularCLI]
 
 ## LIVE PAGE
-https://github.com/MaryamMuchai/Quote-app
-
+https://maryammuchai.github.io/Quote-app/
 ## Installation/Setup
 * Open Terminal{Ctrl+Alt+T}
 * git clone https://github.com/MaryamMuchai/Quote-app
